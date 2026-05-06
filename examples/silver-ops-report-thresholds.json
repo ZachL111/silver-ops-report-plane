@@ -1,0 +1,17 @@
+{
+  "repo": "silver-ops-report-plane",
+  "thresholds": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 5,
+    "ship": 154,
+    "watch": 120
+  },
+  "terms": [
+    "dry-run spread",
+    "rename risk",
+    "operator cost",
+    "idempotence"
+  ]
+}
