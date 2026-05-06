@@ -1,0 +1,73 @@
+{
+  "repo": "silver-ops-report-plane",
+  "language": "JavaScript",
+  "category": "Automation",
+  "goal": "Develop a JavaScript command-oriented project for report scenarios with seeded input scenarios, deterministic summary checks, and bounded memory input sets.",
+  "review_model": {
+    "terms": [
+      "dry-run spread",
+      "rename risk",
+      "operator cost",
+      "idempotence"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "dry-run spread",
+      "signal": 58,
+      "slack": 22,
+      "drag": 19,
+      "confidence": 45,
+      "score": 126,
+      "lane": "watch"
+    },
+    {
+      "name": "stress",
+      "focus": "rename risk",
+      "signal": 70,
+      "slack": 35,
+      "drag": 9,
+      "confidence": 45,
+      "score": 193,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "operator cost",
+      "signal": 64,
+      "slack": 45,
+      "drag": 8,
+      "confidence": 45,
+      "score": 194,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "idempotence",
+      "signal": 56,
+      "slack": 39,
+      "drag": 22,
+      "confidence": 57,
+      "score": 142,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "dry-run spread",
+      "signal": 58,
+      "slack": 54,
+      "drag": 22,
+      "confidence": 73,
+      "score": 177,
+      "lane": "ship"
+    }
+  ]
+}
